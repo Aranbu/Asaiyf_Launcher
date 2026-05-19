@@ -8,7 +8,7 @@
 [Setup]
 AppName=Asaiyf Launcher
 AppVersion=1.0.0
-DefaultDirName={autopf}\Asaiyf Launcher
+DefaultDirName={userappdata}\Asaiyf Launcher
 DefaultGroupName=Asaiyf Launcher
 OutputDir=Output
 OutputBaseFilename=setup_wizard
