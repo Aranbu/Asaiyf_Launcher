@@ -22,7 +22,7 @@ Source: "Asaiyf Launcher\dist\asaiyf_launcher.exe"; DestDir: "{app}"; Flags: ign
 ; Grabs your configuration file and installs it right next to the EXE
 Source: "Asaiyf Launcher\disclamerBox.cfg"; DestDir: "{app}"; Flags: ignoreversion
 ; Tells the compiler to package your other asset folder right next to it
-Source: "Asaiyf Launcher\Asaiyf Shortcuts\*"; DestDir: "{app}\YourFolderName"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "Asaiyf Launcher\Asaiyf Shortcuts\*"; DestDir: "{app}\Asaiyf Shortcuts"; Flags: ignoreversion recursesubdirs createallsubdirs
 
 [Tasks]
 ; This adds the exact physical checkbox asking the user for a desktop shortcut
