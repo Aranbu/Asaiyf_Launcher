@@ -60,6 +60,6 @@ jobs:
     - name: Upload Installer to Release
       uses: softprops/action-gh-release@v2
       with:
-        files: Output/setup_wizard.exe
+        files: Output/Asaiyf_Launcher_Setup.exe
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
