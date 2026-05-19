@@ -54,7 +54,7 @@ jobs:
     # 3. JOB 2: Run Inno Setup to create the Program Files installer wizard and shortcut options
     - name: Compile Installer with Inno Setup
       if: success()
-      uses: amake/innosetup-action@v1
+      uses: amake/innosetup-action@v1.4.0
       with:
         filepath: 'installer_config.iss'
 
