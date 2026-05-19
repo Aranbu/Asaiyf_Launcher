@@ -19,6 +19,8 @@ DisableProgramGroupPage=yes
 [Files]
 ; Tells the compiler to grab the EXE that Job 1 just manufactured in the cloud
 Source: "Asaiyf Launcher\dist\asaiyf_launcher.exe"; DestDir: "{app}"; Flags: ignoreversion
+; Grabs your configuration file and installs it right next to the EXE
+Source: "Asaiyf Launcher\disclamerBox.cfg"; DestDir: "{app}"; Flags: ignoreversion
 ; Tells the compiler to package your other asset folder right next to it
 Source: "Asaiyf Launcher\Asaiyf Shortcuts\*"; DestDir: "{app}\YourFolderName"; Flags: ignoreversion recursesubdirs createallsubdirs
 
