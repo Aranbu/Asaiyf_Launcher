@@ -48,7 +48,7 @@ jobs:
     - name: Build EXE with PyInstaller
       run: |
         cd "Asaiyf Launcher"
-        pyinstaller --onefile --name="asaiyf_launcher" asaiyf_launcher.py
+        pyinstaller --onefile --noconsole --name="asaiyf_launcher" asaiyf_launcher.py
 
     # 3. JOB 2: Run native Windows Inno Setup command directly from the system files
     - name: Compile Installer with Native Inno Setup
