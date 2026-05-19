@@ -15,7 +15,7 @@
 # GitHub Actions Automation Blocks (Borrowed Workflow Logic):
 # - Repository Checkout Module: actions/checkout (Maintained by GitHub Core Team)
 # - Python Runtime Setup: actions/setup-python (Maintained by GitHub Core Team)
-# - Inno Setup Compiler Wrapper: amake/innosetup-action (Maintained by @amake)
+# - Inno Setup Compiler Wrapper: Minionguyjpro/Inno-Setup-Action (Maintained by @Minionguyjpro)
 # - GitHub Releases Binary Uploader: softprops/action-gh-release (Maintained by @softprops)
 # ==============================================================================
 
@@ -51,12 +51,11 @@ jobs:
         cd "Asaiyf Launcher"
         pyinstaller --onefile --name="asaiyf_launcher" asaiyf_launcher.py
 
-    # 3. JOB 2: Run Inno Setup to create the Program Files installer wizard and shortcut options
-    - name: Compile Installer with Inno Setup
-      if: success()
-      uses: amake/innosetup-action@v1.4.0
+    # 3. JOB 2: Run the updated Inno Setup Action compiler tool
+    - name: Compile .ISS to .EXE Installer
+      uses: Minionguyjpro/Inno-Setup-Action@v1.2.2
       with:
-        filepath: 'installer_config.iss'
+        path: installer_config.iss
 
     # 4. Automatically attach the finished "setup_wizard.exe" to your Releases page
     - name: Upload Installer to Release
